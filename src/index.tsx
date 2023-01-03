@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ThemeProvider, Theme, Button } from 'boge-ui'
+import DemoDropdown from './demo-dropdown'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <div>
           <h3>Default counter</h3>
           <Button>Variant Solid</Button>
+          <DemoDropdown />
         </div>
       </div>
     </ThemeProvider>
