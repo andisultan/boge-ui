@@ -25,16 +25,16 @@ Add `Button` to your component:
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Button } from 'boge-ui'
+import { ThemeProvider, Theme, Button } from 'boge-ui'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-    <React.StrictMode>
-        <div>
-            <h2>Default button</h2>
-            <Button>Button</Button>
-        </div>
-    </React.StrictMode>,
+  <React.StrictMode>
+    <ThemeProvider theme={Theme}>
+      <h2>Default button</h2>
+      <Button>Button</Button>
+    </ThemeProvider>
+  </React.StrictMode>,
 )
 
 ```
