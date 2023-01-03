@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components'
 
 // interface
+import { accordionThemeInterface } from './components/accordion/accordion.theme.interface'
 import { anchorThemeInterface } from './components/anchor/anchor.theme.interface'
 import { avatarThemeInterface } from './components/avatar/avatar.theme.interface'
 import { badgeThemeInterface } from './components/badge/badge.theme.interface'
@@ -14,6 +15,7 @@ import { tagThemeInterface } from './components/tag/tag.theme.interface'
 import { textareaThemeInterface } from './components/textarea/textarea.theme.interface'
 
 // theme compnents
+import { accordionTheme } from './components/accordion/accordion.theme'
 import { anchorTheme } from './components/anchor/anchor.theme'
 import { avatarTheme } from './components/avatar/avatar.theme'
 import { badgeTheme } from './components/badge/badge.theme'
@@ -29,6 +31,7 @@ import { textareaTheme } from './components/textarea/textarea.theme'
 declare module 'styled-components' {
   export interface DefaultTheme {
     name: string
+    accordion: accordionThemeInterface
     anchor: anchorThemeInterface
     avatar: avatarThemeInterface
     badge: badgeThemeInterface
@@ -45,6 +48,7 @@ declare module 'styled-components' {
 
 export const Theme: DefaultTheme = {
   name: 'default',
+  accordion: { ...accordionTheme },
   anchor: { ...anchorTheme },
   avatar: { ...avatarTheme },
   badge: { ...badgeTheme },

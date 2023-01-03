@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import { Theme } from './theme'
 
+export * from './components/accordion/accordion'
 export * from './components/anchor/anchor'
 export * from './components/avatar/avatar'
 export * from './components/badge/badge'
