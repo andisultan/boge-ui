@@ -5,6 +5,7 @@ import { accordionThemeInterface } from './components/accordion/accordion.theme.
 import { anchorThemeInterface } from './components/anchor/anchor.theme.interface'
 import { avatarThemeInterface } from './components/avatar/avatar.theme.interface'
 import { badgeThemeInterface } from './components/badge/badge.theme.interface'
+import { boxThemeInterface } from './components/box/box.theme.interface'
 import { buttonThemeInterface } from './components/button/button.theme.interface'
 import { checkboxThemeInterface } from './components/checkbox/checkbox.theme.interface'
 import { dropdownThemeInterface } from './components/dropdown/dropdown.theme.interface'
@@ -19,6 +20,7 @@ import { accordionTheme } from './components/accordion/accordion.theme'
 import { anchorTheme } from './components/anchor/anchor.theme'
 import { avatarTheme } from './components/avatar/avatar.theme'
 import { badgeTheme } from './components/badge/badge.theme'
+import { boxTheme } from './components/box/box.theme'
 import { buttonTheme } from './components/button/button.theme'
 import { checkboxTheme } from './components/checkbox/checkbox.theme'
 import { dropdownTheme } from './components/dropdown/dropdown.theme'
@@ -35,6 +37,7 @@ declare module 'styled-components' {
     anchor: anchorThemeInterface
     avatar: avatarThemeInterface
     badge: badgeThemeInterface
+    box: boxThemeInterface
     button: buttonThemeInterface
     checkbox: checkboxThemeInterface
     dropdown: dropdownThemeInterface
@@ -52,6 +55,7 @@ export const Theme: DefaultTheme = {
   anchor: { ...anchorTheme },
   avatar: { ...avatarTheme },
   badge: { ...badgeTheme },
+  box: { ...boxTheme },
   button: { ...buttonTheme },
   checkbox: { ...checkboxTheme },
   dropdown: { ...dropdownTheme },

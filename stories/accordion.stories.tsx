@@ -1,7 +1,7 @@
 import React from 'react'
 import { LeftOutlined } from '@ant-design/icons'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { Accordion } from '../src/components/accordion/accordion'
+import { Accordion } from '../src/'
 
 export default {
   title: 'Component/Accordion',
@@ -23,4 +23,5 @@ Example.args = {
     },
   ],
   icon: <LeftOutlined />,
+  defaultActive: 0,
 }

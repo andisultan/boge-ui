@@ -13,7 +13,7 @@ import { withThemesProvider } from 'storybook-addon-styled-component-theme'
 import { ThemeProvider } from 'styled-components'
 import { Theme } from '../src/theme'
 
-const GreenTheme = {
+const PijarTheme = {
   ...Theme,
   name: 'pijar',
   button: {
@@ -27,7 +27,7 @@ const GreenTheme = {
     variant: {
       solid: {
         background: {
-          active: 'linear-gradient(to right, #f6bb40 0%, #f79d42 100%)',
+          active: 'red',
           hover: 'linear-gradient(to right, #19527e 0%, #3088c8 100%)',
         },
         border: {
@@ -46,5 +46,5 @@ const GreenTheme = {
   }
 }
 
-const themes = [Theme, GreenTheme];
+const themes = [Theme];
 addDecorator(withThemesProvider(themes, ThemeProvider));

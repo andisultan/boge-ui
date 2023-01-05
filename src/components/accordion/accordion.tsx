@@ -9,17 +9,21 @@ export type ItemType = {
 
 export interface AccordionItemProps {
   /**
-   * key of the accordion item
+   * List of the accordion item
    */
-  items: [ItemType]
+  items: ItemType[]
   /**
    * Element for active icon
    */
   icon?: React.ReactNode
+  /**
+   * Set default accordion open
+   */
+  defaultActive?: number
 }
 
-export const Accordion: React.FC<AccordionItemProps> = ({ items, icon, ...props }) => {
-  const [currentIdx, setCurrentIdx] = useState(-1)
+export const Accordion: React.FC<AccordionItemProps> = ({ items, icon, defaultActive = -1, ...props }) => {
+  const [currentIdx, setCurrentIdx] = useState(defaultActive)
   const onClick = (idx: number) => setCurrentIdx((currentValue) => (currentValue !== idx ? idx : -1))
 
   return (
